@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+    <title>מחשבון</title>
+</head>
+<body>
+    <div class="container">
+        <h1>המחשבון שלי</h1>
+        <div class="calc">
+            <input type="text" id="answer" name="screen" readonly>
+        <table>
+            <tr>
+                <td><button class="opreator" onclick="calculate('(')">(</button></td>
+                <td><button class="opreator" onclick="calculate(')')">)</button></td>
+                <td><button style="background-color: #F05454; font-weight: bold; color: #ecf0f1;" class="opreator" id="clear">C</button></td>
+                <td><button class="opreator" onclick="calculate('%')">%</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="calculate(7)">7</button></td>
+                <td><button onclick="calculate(8)">8</button></td>
+                <td><button onclick="calculate(9)">9</button></td>
+                <td><button class="opreator" onclick="calculate('*')">X</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="calculate(4)">4</button></td>
+                <td><button onclick="calculate(5)">5</button></td>
+                <td><button onclick="calculate(6)">6</button></td>
+                <td><button class="opreator" onclick="calculate('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="calculate(1)">1</button></td>
+                <td><button onclick="calculate(2)">2</button></td>
+                <td><button onclick="calculate(3)">3</button></td>
+                <td><button class="opreator" onclick="calculate('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="calculate()">0</button></td>
+                <td><button style="font-weight: bold;" onclick="calculate('.')">.</button></td>
+                <td><button onclick="calculate('/')">/</button></td>
+                <td><button style="background-color: #121212; font-weight: bold; color: #ecf0f1;" onclick="result()">=</button></td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <h3>Made with <span class="heart">❤</span> by A.O</h3>
+    </div>
+    </div>
+
+
+    <script src="/app.js"></script>
+</body>
+</html>
